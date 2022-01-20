@@ -24,36 +24,6 @@
     <ClCompile Include="..\h2shared\cfgfile.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="chase.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cl_cmd.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cl_demo.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cl_effect.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cl_inlude.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cl_input.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cl_main.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cl_parse.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cl_string.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cl_tent.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\h2shared\cmd.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -265,6 +235,36 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\h2shared\zone.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cl_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cl_parse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cl_string.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cl_tent.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\chase.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cl_cmd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cl_demo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cl_effect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cl_inlude.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cl_input.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

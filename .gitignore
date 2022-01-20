@@ -1,3 +1,18 @@
 
 *.db
 *.htm
+*.obj
+*.log
+*.idb
+*.pdb
+engine/hexen2/VisualStudio2022/Build-glh2/x64/Release/glh2.tlog/unsuccessfulbuild
+engine/hexen2/VisualStudio2022/Build-glh2/x64/Release/glh2.tlog/glh2.lastbuildstate
+engine/hexen2/VisualStudio2022/Build-glh2/x64/Release/glh2.tlog/CL.command.1.tlog
+engine/hexen2/VisualStudio2022/Build-glh2/x64/Debug/glh2.tlog/unsuccessfulbuild
+engine/hexen2/VisualStudio2022/Build-glh2/x64/Debug/glh2.tlog/glh2.lastbuildstate
+engine/hexen2/VisualStudio2022/Build-glh2/x64/Debug/glh2.tlog/CL.write.1.tlog
+engine/hexen2/VisualStudio2022/Build-glh2/x64/Debug/glh2.tlog/CL.command.1.tlog
+engine/hexen2/VisualStudio2022/.vs/Hexen2/v17/fileList.bin
+engine/hexen2/VisualStudio2022/.vs/Hexen2/FileContentIndex/read.lock
+*.vsidx
+utils/VisualStudio2005/.vs/H2UTILS/FileContentIndex/read.lock
