@@ -16,3 +16,14 @@ engine/hexen2/VisualStudio2022/.vs/Hexen2/v17/fileList.bin
 engine/hexen2/VisualStudio2022/.vs/Hexen2/FileContentIndex/read.lock
 *.vsidx
 utils/VisualStudio2005/.vs/H2UTILS/FileContentIndex/read.lock
+*.db-shm
+*.db-wal
+*.tlog
+*.opendb
+*.ipch
+*.exe
+*.recipe
+*.ilk
+*.dll
+*.res
+*.txt

@@ -96,7 +96,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.;..\h2shared;..\..\common;..\..\oslibs\windows\misc\include;..\..\oslibs\windows\dxsdk\include;..\..\oslibs\windows\codecs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\oslibs\windows\codecs\include;C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\oslibs\windows\misc\include;C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\oslibs\windows\dxsdk\include;C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\common;C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\engine\h2shared;C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\engine\hexen2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;DEBUG;DEBUG_BUILD;_WINDOWS;DX_DLSYM;_USE_WINSOCK2;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;USE_CODEC_MP3;USE_CODEC_VORBIS;USE_CODEC_WAVE;USE_CODEC_FLAC;USE_CODEC_OPUS;USE_CODEC_MIKMOD;USE_CODEC_UMX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -109,17 +109,17 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;..\h2shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\engine\h2shared;C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\engine\hexen2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>libvorbisfile.lib;libvorbis.lib;libopusfile.lib;libopus.lib;libFLAC.lib;libogg.lib;libmad.lib;libmikmod.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\..\oslibs\windows\codecs\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\oslibs\windows\codecs\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>copy "..\..\oslibs\windows\codecs\x64\*.dll" "$(TargetDir)"</Command>
+      <Command>copy "C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\oslibs\windows\codecs\x64\*.dll" "$(TargetDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -178,7 +178,7 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>libvorbisfile.lib;libvorbis.lib;libopusfile.lib;libopus.lib;libFLAC.lib;libogg.lib;libmad.lib;libmikmod.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\..\oslibs\windows\codecs\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\oslibs\windows\codecs\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
@@ -186,7 +186,7 @@
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>copy "..\..\oslibs\windows\codecs\x64\*.dll" "$(TargetDir)"</Command>
+      <Command>copy "C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\oslibs\windows\codecs\x64\*.dll" "$(TargetDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -226,6 +226,71 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\common\crc.c" />
+    <ClCompile Include="..\..\..\common\qsnprint.c" />
+    <ClCompile Include="..\..\..\common\q_endian.c" />
+    <ClCompile Include="..\..\..\common\strlcat.c" />
+    <ClCompile Include="..\..\..\common\strlcpy.c" />
+    <ClCompile Include="..\..\h2shared\bgmusic.c" />
+    <ClCompile Include="..\..\h2shared\cd_win.c" />
+    <ClCompile Include="..\..\h2shared\cfgfile.c" />
+    <ClCompile Include="..\..\h2shared\cmd.c" />
+    <ClCompile Include="..\..\h2shared\common.c" />
+    <ClCompile Include="..\..\h2shared\cvar.c" />
+    <ClCompile Include="..\..\h2shared\debuglog.c" />
+    <ClCompile Include="..\..\h2shared\draw.c" />
+    <ClCompile Include="..\..\h2shared\d_edge.c" />
+    <ClCompile Include="..\..\h2shared\d_fill.c" />
+    <ClCompile Include="..\..\h2shared\d_init.c" />
+    <ClCompile Include="..\..\h2shared\d_modech.c" />
+    <ClCompile Include="..\..\h2shared\d_part.c" />
+    <ClCompile Include="..\..\h2shared\d_polyse.c" />
+    <ClCompile Include="..\..\h2shared\d_scan.c" />
+    <ClCompile Include="..\..\h2shared\d_sky.c" />
+    <ClCompile Include="..\..\h2shared\d_sprite.c" />
+    <ClCompile Include="..\..\h2shared\d_surf.c" />
+    <ClCompile Include="..\..\h2shared\d_vars.c" />
+    <ClCompile Include="..\..\h2shared\d_zpoint.c" />
+    <ClCompile Include="..\..\h2shared\host_string.c" />
+    <ClCompile Include="..\..\h2shared\in_win.c" />
+    <ClCompile Include="..\..\h2shared\link_ops.c" />
+    <ClCompile Include="..\..\h2shared\mathlib.c" />
+    <ClCompile Include="..\..\h2shared\mid2strm.c" />
+    <ClCompile Include="..\..\h2shared\midi_win.c" />
+    <ClCompile Include="..\..\h2shared\model.c" />
+    <ClCompile Include="..\..\h2shared\msg_io.c" />
+    <ClCompile Include="..\..\h2shared\quakefs.c" />
+    <ClCompile Include="..\..\h2shared\r_aclip.c" />
+    <ClCompile Include="..\..\h2shared\r_bsp.c" />
+    <ClCompile Include="..\..\h2shared\r_draw.c" />
+    <ClCompile Include="..\..\h2shared\r_edge.c" />
+    <ClCompile Include="..\..\h2shared\r_efrag.c" />
+    <ClCompile Include="..\..\h2shared\r_light.c" />
+    <ClCompile Include="..\..\h2shared\r_sky.c" />
+    <ClCompile Include="..\..\h2shared\r_sprite.c" />
+    <ClCompile Include="..\..\h2shared\r_surf.c" />
+    <ClCompile Include="..\..\h2shared\r_vars.c" />
+    <ClCompile Include="..\..\h2shared\screen.c" />
+    <ClCompile Include="..\..\h2shared\sizebuf.c" />
+    <ClCompile Include="..\..\h2shared\snd_codec.c" />
+    <ClCompile Include="..\..\h2shared\snd_dma.c" />
+    <ClCompile Include="..\..\h2shared\snd_dsound.c" />
+    <ClCompile Include="..\..\h2shared\snd_flac.c" />
+    <ClCompile Include="..\..\h2shared\snd_mem.c" />
+    <ClCompile Include="..\..\h2shared\snd_mikmod.c" />
+    <ClCompile Include="..\..\h2shared\snd_mix.c" />
+    <ClCompile Include="..\..\h2shared\snd_mp3.c" />
+    <ClCompile Include="..\..\h2shared\snd_mp3tag.c" />
+    <ClCompile Include="..\..\h2shared\snd_opus.c" />
+    <ClCompile Include="..\..\h2shared\snd_sys.c" />
+    <ClCompile Include="..\..\h2shared\snd_umx.c" />
+    <ClCompile Include="..\..\h2shared\snd_vorbis.c" />
+    <ClCompile Include="..\..\h2shared\snd_wave.c" />
+    <ClCompile Include="..\..\h2shared\snd_win.c" />
+    <ClCompile Include="..\..\h2shared\snd_xmp.c" />
+    <ClCompile Include="..\..\h2shared\vid_win.c" />
+    <ClCompile Include="..\..\h2shared\wad.c" />
+    <ClCompile Include="..\..\h2shared\zone.c" />
     <ClCompile Include="..\chase.c" />
     <ClCompile Include="..\cl_cmd.c" />
     <ClCompile Include="..\cl_demo.c" />
@@ -236,98 +301,33 @@
     <ClCompile Include="..\cl_parse.c" />
     <ClCompile Include="..\cl_string.c" />
     <ClCompile Include="..\cl_tent.c" />
-    <ClCompile Include="..\h2shared\bgmusic.c" />
-    <ClCompile Include="..\h2shared\cd_win.c" />
-    <ClCompile Include="..\h2shared\cfgfile.c" />
-    <ClCompile Include="..\h2shared\cmd.c" />
-    <ClCompile Include="..\h2shared\common.c" />
-    <ClCompile Include="console.c" />
-    <ClCompile Include="..\..\common\crc.c" />
-    <ClCompile Include="..\h2shared\cvar.c" />
-    <ClCompile Include="..\h2shared\d_edge.c" />
-    <ClCompile Include="..\h2shared\d_fill.c" />
-    <ClCompile Include="..\h2shared\d_init.c" />
-    <ClCompile Include="..\h2shared\d_modech.c" />
-    <ClCompile Include="..\h2shared\d_part.c" />
-    <ClCompile Include="..\h2shared\d_polyse.c" />
-    <ClCompile Include="..\h2shared\d_scan.c" />
-    <ClCompile Include="..\h2shared\d_sky.c" />
-    <ClCompile Include="..\h2shared\d_sprite.c" />
-    <ClCompile Include="..\h2shared\d_surf.c" />
-    <ClCompile Include="..\h2shared\d_vars.c" />
-    <ClCompile Include="..\h2shared\d_zpoint.c" />
-    <ClCompile Include="..\h2shared\debuglog.c" />
-    <ClCompile Include="..\h2shared\draw.c" />
-    <ClCompile Include="host.c" />
-    <ClCompile Include="host_cmd.c" />
-    <ClCompile Include="..\h2shared\in_win.c" />
-    <ClCompile Include="keys.c" />
-    <ClCompile Include="..\h2shared\link_ops.c" />
-    <ClCompile Include="..\h2shared\mathlib.c" />
-    <ClCompile Include="menu.c" />
-    <ClCompile Include="..\h2shared\mid2strm.c" />
-    <ClCompile Include="..\h2shared\midi_win.c" />
-    <ClCompile Include="..\h2shared\model.c" />
-    <ClCompile Include="..\h2shared\msg_io.c" />
-    <ClCompile Include="net_dgrm.c" />
-    <ClCompile Include="net_loop.c" />
-    <ClCompile Include="net_main.c" />
-    <ClCompile Include="net_win.c" />
-    <ClCompile Include="net_wins.c" />
-    <ClCompile Include="net_wipx.c" />
-    <ClCompile Include="pr_cmds.c" />
-    <ClCompile Include="pr_edict.c" />
-    <ClCompile Include="pr_exec.c" />
-    <ClCompile Include="..\h2shared\host_string.c" />
-    <ClCompile Include="..\..\common\q_endian.c" />
-    <ClCompile Include="..\..\common\qsnprint.c" />
-    <ClCompile Include="..\h2shared\quakefs.c" />
-    <ClCompile Include="..\h2shared\r_aclip.c" />
-    <ClCompile Include="r_alias.c" />
-    <ClCompile Include="..\h2shared\r_bsp.c" />
-    <ClCompile Include="..\h2shared\r_draw.c" />
-    <ClCompile Include="..\h2shared\r_edge.c" />
-    <ClCompile Include="..\h2shared\r_efrag.c" />
-    <ClCompile Include="..\h2shared\r_light.c" />
-    <ClCompile Include="r_main.c" />
-    <ClCompile Include="r_misc.c" />
-    <ClCompile Include="r_part.c" />
-    <ClCompile Include="..\h2shared\r_sky.c" />
-    <ClCompile Include="..\h2shared\r_sprite.c" />
-    <ClCompile Include="..\h2shared\r_surf.c" />
-    <ClCompile Include="..\h2shared\r_vars.c" />
-    <ClCompile Include="sbar.c" />
-    <ClCompile Include="..\h2shared\screen.c" />
-    <ClCompile Include="..\h2shared\sizebuf.c" />
-    <ClCompile Include="..\h2shared\snd_codec.c" />
-    <ClCompile Include="..\h2shared\snd_dma.c" />
-    <ClCompile Include="..\h2shared\snd_dsound.c" />
-    <ClCompile Include="..\h2shared\snd_flac.c" />
-    <ClCompile Include="..\h2shared\snd_mem.c" />
-    <ClCompile Include="..\h2shared\snd_mikmod.c" />
-    <ClCompile Include="..\h2shared\snd_mix.c" />
-    <ClCompile Include="..\h2shared\snd_mp3.c" />
-    <ClCompile Include="..\h2shared\snd_mp3tag.c" />
-    <ClCompile Include="..\h2shared\snd_opus.c" />
-    <ClCompile Include="..\h2shared\snd_sys.c" />
-    <ClCompile Include="..\h2shared\snd_umx.c" />
-    <ClCompile Include="..\h2shared\snd_vorbis.c" />
-    <ClCompile Include="..\h2shared\snd_wave.c" />
-    <ClCompile Include="..\h2shared\snd_xmp.c" />
-    <ClCompile Include="..\h2shared\snd_win.c" />
-    <ClCompile Include="..\..\common\strlcat.c" />
-    <ClCompile Include="..\..\common\strlcpy.c" />
-    <ClCompile Include="sv_effect.c" />
-    <ClCompile Include="sv_main.c" />
-    <ClCompile Include="sv_move.c" />
-    <ClCompile Include="sv_phys.c" />
-    <ClCompile Include="sv_user.c" />
-    <ClCompile Include="sys_win.c" />
-    <ClCompile Include="..\h2shared\vid_win.c" />
-    <ClCompile Include="view.c" />
-    <ClCompile Include="..\h2shared\wad.c" />
-    <ClCompile Include="world.c" />
-    <ClCompile Include="..\h2shared\zone.c" />
+    <ClCompile Include="..\console.c" />
+    <ClCompile Include="..\host.c" />
+    <ClCompile Include="..\host_cmd.c" />
+    <ClCompile Include="..\keys.c" />
+    <ClCompile Include="..\menu.c" />
+    <ClCompile Include="..\net_dgrm.c" />
+    <ClCompile Include="..\net_loop.c" />
+    <ClCompile Include="..\net_main.c" />
+    <ClCompile Include="..\net_win.c" />
+    <ClCompile Include="..\net_wins.c" />
+    <ClCompile Include="..\net_wipx.c" />
+    <ClCompile Include="..\pr_cmds.c" />
+    <ClCompile Include="..\pr_edict.c" />
+    <ClCompile Include="..\pr_exec.c" />
+    <ClCompile Include="..\r_alias.c" />
+    <ClCompile Include="..\r_main.c" />
+    <ClCompile Include="..\r_misc.c" />
+    <ClCompile Include="..\r_part.c" />
+    <ClCompile Include="..\sbar.c" />
+    <ClCompile Include="..\sv_effect.c" />
+    <ClCompile Include="..\sv_main.c" />
+    <ClCompile Include="..\sv_move.c" />
+    <ClCompile Include="..\sv_phys.c" />
+    <ClCompile Include="..\sv_user.c" />
+    <ClCompile Include="..\sys_win.c" />
+    <ClCompile Include="..\view.c" />
+    <ClCompile Include="..\world.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\common\adivtab.h" />
@@ -337,6 +337,7 @@
     <ClInclude Include="..\..\common\bspfile.h" />
     <ClInclude Include="..\h2shared\cdaudio.h" />
     <ClInclude Include="..\h2shared\cfgfile.h" />
+    <ClInclude Include="..\quakedef.h" />
     <ClInclude Include="client.h" />
     <ClInclude Include="..\h2shared\cmd.h" />
     <ClInclude Include="..\h2shared\common.h" />
@@ -380,7 +381,6 @@
     <ClInclude Include="..\..\common\q_endian.h" />
     <ClInclude Include="..\h2shared\q_sound.h" />
     <ClInclude Include="..\..\common\q_stdinc.h" />
-    <ClInclude Include="quakedef.h" />
     <ClInclude Include="..\h2shared\quakefs.h" />
     <ClInclude Include="quakeinc.h" />
     <ClInclude Include="..\h2shared\r_local.h" />
@@ -423,7 +423,7 @@
     <None Include="..\resource\hexen2.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\h2shared\win32res.rc" />
+    <ResourceCompile Include="C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\engine\h2shared\win32res.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
