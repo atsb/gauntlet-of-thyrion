@@ -27,3 +27,8 @@ utils/VisualStudio2005/.vs/H2UTILS/FileContentIndex/read.lock
 *.dll
 *.res
 *.txt
+.DS_Store
+engine/.DS_Store
+engine/hexen2/.DS_Store
+gamecode/.DS_Store
+gamecode/hc/.DS_Store

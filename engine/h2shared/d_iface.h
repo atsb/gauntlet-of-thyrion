@@ -37,7 +37,7 @@ typedef struct
 
 /* particle enums and types: note that hexen2 and
    hexenworld versions of these are different!! */
-#include "particle.h"
+#include "../hexen2/particle.h"
 
 typedef struct polyvert_s {
 	float	u, v, zi, s, t;

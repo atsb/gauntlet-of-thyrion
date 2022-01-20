@@ -957,6 +957,8 @@
 /* Begin PBXProject section */
 		707D575A0AA9F4B100313A9F /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 707D575B0AA9F4B100313A9F /* Build configuration list for PBXProject "hexen2" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -1217,11 +1219,7 @@
 		70158C500AAF3C8800F6437C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					x86_64,
-					i386,
-					ppc,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -1249,7 +1247,7 @@
 				);
 				INFOPLIST_FILE = hexen2.plist;
 				LIBRARY_SEARCH_PATHS = ../../../oslibs/macosx/codecs/lib;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				"MACOSX_DEPLOYMENT_TARGET[arch=i386]" = 10.4;
 				"MACOSX_DEPLOYMENT_TARGET[arch=ppc]" = 10.4;
 				"MACOSX_DEPLOYMENT_TARGET[arch=x86_64]" = 10.6;
@@ -1274,10 +1272,10 @@
 				OTHER_REZFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = Hexen_II;
-				SDKROOT = macosx10.6;
-				"SDKROOT[arch=i386]" = macosx10.5;
-				"SDKROOT[arch=ppc]" = macosx10.5;
-				"SDKROOT[arch=x86_64]" = macosx10.6;
+				SDKROOT = macosx;
+				"SDKROOT[arch=i386]" = macosx;
+				"SDKROOT[arch=ppc]" = macosx;
+				"SDKROOT[arch=x86_64]" = macosx;
 				SECTORDER_FLAGS = "";
 				STRIP_INSTALLED_PRODUCT = YES;
 				WARNING_CFLAGS = (
@@ -1292,11 +1290,7 @@
 		70158C510AAF3C8800F6437C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					x86_64,
-					i386,
-					ppc,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -1324,7 +1318,7 @@
 				);
 				INFOPLIST_FILE = hexen2.plist;
 				LIBRARY_SEARCH_PATHS = ../../../oslibs/macosx/codecs/lib;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				"MACOSX_DEPLOYMENT_TARGET[arch=i386]" = 10.4;
 				"MACOSX_DEPLOYMENT_TARGET[arch=ppc]" = 10.4;
 				"MACOSX_DEPLOYMENT_TARGET[arch=x86_64]" = 10.6;
@@ -1349,10 +1343,10 @@
 				OTHER_REZFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = Hexen_II;
-				SDKROOT = macosx10.6;
-				"SDKROOT[arch=i386]" = macosx10.5;
-				"SDKROOT[arch=ppc]" = macosx10.5;
-				"SDKROOT[arch=x86_64]" = macosx10.6;
+				SDKROOT = macosx;
+				"SDKROOT[arch=i386]" = macosx;
+				"SDKROOT[arch=ppc]" = macosx;
+				"SDKROOT[arch=x86_64]" = macosx;
 				SECTORDER_FLAGS = "";
 				STRIP_INSTALLED_PRODUCT = YES;
 				WARNING_CFLAGS = (
@@ -1368,11 +1362,7 @@
 		707D575C0AA9F4B100313A9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					x86_64,
-					i386,
-					ppc,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					../../../oslibs/macosx,
@@ -1399,19 +1389,16 @@
 					../../../oslibs/macosx/codecs/include,
 				);
 				LIBRARY_SEARCH_PATHS = ../../../oslibs/macosx/codecs/lib;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				OTHER_LDFLAGS = "";
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		707D575D0AA9F4B100313A9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					x86_64,
-					i386,
-					ppc,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					../../../oslibs/macosx,
@@ -1438,19 +1425,16 @@
 					../../../oslibs/macosx/codecs/include,
 				);
 				LIBRARY_SEARCH_PATHS = ../../../oslibs/macosx/codecs/lib;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				OTHER_LDFLAGS = "";
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
 		707D58E70AA9FBB700313A9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					x86_64,
-					i386,
-					ppc,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					../../../oslibs/macosx,
@@ -1484,31 +1468,23 @@
 				);
 				INFOPLIST_FILE = glhexen2.plist;
 				LIBRARY_SEARCH_PATHS = ../../../oslibs/macosx/codecs/lib;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				"MACOSX_DEPLOYMENT_TARGET[arch=i386]" = 10.4;
-				"MACOSX_DEPLOYMENT_TARGET[arch=ppc]" = 10.4;
-				"MACOSX_DEPLOYMENT_TARGET[arch=x86_64]" = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				"MACOSX_DEPLOYMENT_TARGET[arch=i386]" = 11.5;
+				"MACOSX_DEPLOYMENT_TARGET[arch=ppc]" = 11.5;
+				"MACOSX_DEPLOYMENT_TARGET[arch=x86_64]" = 11.5;
 				OTHER_CFLAGS = "";
-				"OTHER_CFLAGS[arch=i386]" = (
+				"OTHER_CFLAGS[arch=arm64]" = (
 					"-arch",
-					i386,
-				);
-				"OTHER_CFLAGS[arch=ppc]" = (
-					"-arch",
-					ppc,
+					arm64,
 				);
 				"OTHER_CFLAGS[arch=x86_64]" = (
 					"-arch",
 					x86_64,
 				);
 				OTHER_LDFLAGS = "";
-				"OTHER_LDFLAGS[arch=i386]" = (
+				"OTHER_LDFLAGS[arch=arm64]" = (
 					"-arch",
-					i386,
-				);
-				"OTHER_LDFLAGS[arch=ppc]" = (
-					"-arch",
-					ppc,
+					arm64,
 				);
 				"OTHER_LDFLAGS[arch=x86_64]" = (
 					"-arch",
@@ -1517,10 +1493,10 @@
 				OTHER_REZFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = "Hexen_II-gl";
-				SDKROOT = macosx10.6;
-				"SDKROOT[arch=i386]" = macosx10.5;
-				"SDKROOT[arch=ppc]" = macosx10.5;
-				"SDKROOT[arch=x86_64]" = macosx10.6;
+				SDKROOT = macosx;
+				"SDKROOT[arch=*]" = macosx;
+				"SDKROOT[arch=arm64]" = macosx;
+				"SDKROOT[arch=x86_64]" = macosx;
 				SECTORDER_FLAGS = "";
 				STRIP_INSTALLED_PRODUCT = YES;
 				WARNING_CFLAGS = (
@@ -1535,11 +1511,7 @@
 		707D58E80AA9FBB700313A9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					x86_64,
-					i386,
-					ppc,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					../../../oslibs/macosx,
@@ -1573,31 +1545,23 @@
 				);
 				INFOPLIST_FILE = glhexen2.plist;
 				LIBRARY_SEARCH_PATHS = ../../../oslibs/macosx/codecs/lib;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				"MACOSX_DEPLOYMENT_TARGET[arch=i386]" = 10.4;
-				"MACOSX_DEPLOYMENT_TARGET[arch=ppc]" = 10.4;
-				"MACOSX_DEPLOYMENT_TARGET[arch=x86_64]" = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				"MACOSX_DEPLOYMENT_TARGET[arch=*]" = 11.5;
+				"MACOSX_DEPLOYMENT_TARGET[arch=arm64]" = 11.5;
+				"MACOSX_DEPLOYMENT_TARGET[arch=x86_64]" = 11.5;
 				OTHER_CFLAGS = "";
-				"OTHER_CFLAGS[arch=i386]" = (
+				"OTHER_CFLAGS[arch=arm64]" = (
 					"-arch",
-					i386,
-				);
-				"OTHER_CFLAGS[arch=ppc]" = (
-					"-arch",
-					ppc,
+					arm64,
 				);
 				"OTHER_CFLAGS[arch=x86_64]" = (
 					"-arch",
 					x86_64,
 				);
 				OTHER_LDFLAGS = "";
-				"OTHER_LDFLAGS[arch=i386]" = (
+				"OTHER_LDFLAGS[arch=arm64]" = (
 					"-arch",
-					i386,
-				);
-				"OTHER_LDFLAGS[arch=ppc]" = (
-					"-arch",
-					ppc,
+					arm64,
 				);
 				"OTHER_LDFLAGS[arch=x86_64]" = (
 					"-arch",
@@ -1606,10 +1570,10 @@
 				OTHER_REZFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = "Hexen_II-gl";
-				SDKROOT = macosx10.6;
-				"SDKROOT[arch=i386]" = macosx10.5;
-				"SDKROOT[arch=ppc]" = macosx10.5;
-				"SDKROOT[arch=x86_64]" = macosx10.6;
+				SDKROOT = macosx;
+				"SDKROOT[arch=*]" = macosx;
+				"SDKROOT[arch=arm64]" = macosx;
+				"SDKROOT[arch=x86_64]" = macosx;
 				SECTORDER_FLAGS = "";
 				STRIP_INSTALLED_PRODUCT = YES;
 				WARNING_CFLAGS = (
