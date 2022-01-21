@@ -1,4 +1,4 @@
-Hexen II: Hammer of Thyrion  (uHexen2)
+Hexen II: Gauntlet of Thyrion  (uHexen2)
 
 Installation Instructions for Windows:
 --------------------------------------
@@ -15,7 +15,7 @@ driver for old Voodoo cards only and you want to delete this file
 unless you are using one of those very old cards. If you get an error
 message like "glide2x.dll not found", then this is the reason!
 
-Now extract the Hammer of Thyrion package into your installation
+Now extract the Gauntlet of Thyrion package into your installation
 folder. You must allow overwriting the existing files. It contains
 all of the updated program files and gamedata.  You no longer need
 h2mp.exe and glh2mp.exe: they are obsoleted, you can delete them.

@@ -1,6 +1,6 @@
 /* midi_mac.c -- MIDI module for Mac OS using QuickTime.
  * Based on the macglquake project with adjustments to make
- * it work with Mac OS X and Hexen II: Hammer of Thyrion.
+ * it work with Mac OS X and Hexen II: Gauntlet of Thyrion.
  * (FIXME: Maybe update this to use QuickTime TunePlayer,
  *	   as in native_midi_mac of SDL_mixer, sometime?)
  *

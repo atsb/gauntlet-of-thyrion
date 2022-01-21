@@ -91,7 +91,7 @@ void LOG_Printf (const char *fmt, ...)
 static void LOG_PrintVersion (void)
 {
 /* repeating the PrintVersion() messages from main() here */
-	LOG_Printf("Hammer of Thyrion, release %s (%s)\n", HOT_VERSION_STR, HOT_VERSION_REL_DATE);
+	LOG_Printf("Gauntlet of Thyrion, release %s (%s)\n", HOT_VERSION_STR, HOT_VERSION_REL_DATE);
 #if defined(SERVERONLY) && !defined(H2W)
 	LOG_Printf("Hexen II dedicated server %4.2f (%s)\n", ENGINE_VERSION, PLATFORM_STRING);
 #else

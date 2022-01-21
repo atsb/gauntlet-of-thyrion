@@ -1,4 +1,4 @@
-# libmad-0.15.1b compiled for djgpp port of Hammer of Thyrion (uhexen2):
+# libmad-0.15.1b compiled for djgpp port of Gauntlet of Thyrion (uhexen2):
 # commented out code not needed in uhexen2 (see diffs below for details)
 # replaced malloc, calloc and free calls by Z_Malloc and ZFree (below)
 # configured like:

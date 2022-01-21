@@ -1,4 +1,4 @@
-/* snd_alsa.c -- ALSA 1.0 sound driver for Hexen II: Hammer of Thyrion
+/* snd_alsa.c -- ALSA 1.0 sound driver for Hexen II: Gauntlet of Thyrion
  *
  * Copyright (C) 1999,2004  contributors of the QuakeForge project
  * Copyright (C) 2005-2012  O.Sezer <sezero@users.sourceforge.net>

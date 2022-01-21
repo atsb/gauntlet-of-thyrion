@@ -96,7 +96,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\oslibs\windows\codecs\include;C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\oslibs\windows\misc\include;C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\oslibs\windows\dxsdk\include;C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\common;C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\engine\h2shared;C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\engine\hexen2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(SolutionDir)..\..\..\oslibs\windows\codecs\include;%(SolutionDir)..\..\..\oslibs\windows\misc\include;%(SolutionDir)..\..\..\oslibs\windows\dxsdk\include;%(SolutionDir)..\..\..\common;%(SolutionDir)..\..\h2shared;%(SolutionDir)..\..\hexen2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;DEBUG;DEBUG_BUILD;_WINDOWS;DX_DLSYM;_USE_WINSOCK2;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;USE_CODEC_MP3;USE_CODEC_VORBIS;USE_CODEC_WAVE;USE_CODEC_FLAC;USE_CODEC_OPUS;USE_CODEC_MIKMOD;USE_CODEC_UMX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -109,17 +109,17 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\engine\h2shared;C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\engine\hexen2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(SolutionDir)..\..\h2shared;%(SolutionDir)..\..\hexen2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>libvorbisfile.lib;libvorbis.lib;libopusfile.lib;libopus.lib;libFLAC.lib;libogg.lib;libmad.lib;libmikmod.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\oslibs\windows\codecs\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%(SolutionDir)..\..\..\oslibs\windows\codecs\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>copy "C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\oslibs\windows\codecs\x64\*.dll" "$(TargetDir)"</Command>
+      <Command>copy "%(SolutionDir)..\..\..\oslibs\windows\codecs\x64\*.dll" "$(TargetDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -128,7 +128,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.;..\h2shared;..\..\common;..\..\oslibs\windows\misc\include;..\..\oslibs\windows\dxsdk\include;..\..\oslibs\windows\codecs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(SolutionDir)..\;%(SolutionDir)..\..\h2shared;%(SolutionDir)..\..\..\common;%(SolutionDir)..\..\..\oslibs\windows\misc\include;%(SolutionDir)..\..\..\oslibs\windows\dxsdk\include;%(SolutionDir)..\..\..\oslibs\windows\codecs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;DEBUG;DEBUG_BUILD;_WINDOWS;DX_DLSYM;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;USE_CODEC_MP3;USE_CODEC_VORBIS;USE_CODEC_WAVE;USE_CODEC_FLAC;USE_CODEC_OPUS;USE_CODEC_MIKMOD;USE_CODEC_UMX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -141,18 +141,18 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;..\h2shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(SolutionDir)..\;%(SolutionDir)..\..\h2shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>libvorbisfile.lib;libvorbis.lib;libopusfile.lib;libopus.lib;libFLAC.lib;libogg.lib;libmad.lib;libmikmod.lib;wsock32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\..\oslibs\windows\codecs\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%(SolutionDir)..\..\..\oslibs\windows\codecs\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
     <PostBuildEvent>
-      <Command>copy "..\..\oslibs\windows\codecs\x86\*.dll" "$(TargetDir)"</Command>
+      <Command>copy "%(SolutionDir)..\..\..\oslibs\windows\codecs\x86\*.dll" "$(TargetDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -162,7 +162,7 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>.;..\h2shared;..\..\common;..\..\oslibs\windows\misc\include;..\..\oslibs\windows\dxsdk\include;..\..\oslibs\windows\codecs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(SolutionDir)..\;%(SolutionDir)..\..\h2shared;%(SolutionDir)..\..\..\common;%(SolutionDir)..\..\..\oslibs\windows\misc\include;%(SolutionDir)..\..\..\oslibs\windows\dxsdk\include;%(SolutionDir)..\..\..\oslibs\windows\codecs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;DX_DLSYM;_USE_WINSOCK2;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;USE_CODEC_MP3;USE_CODEC_VORBIS;USE_CODEC_WAVE;USE_CODEC_FLAC;USE_CODEC_OPUS;USE_CODEC_MIKMOD;USE_CODEC_UMX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -174,11 +174,11 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;..\h2shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(SolutionDir)..\;%(SolutionDir)..\..\h2shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>libvorbisfile.lib;libvorbis.lib;libopusfile.lib;libopus.lib;libFLAC.lib;libogg.lib;libmad.lib;libmikmod.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\oslibs\windows\codecs\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%(SolutionDir)..\..\..\oslibs\windows\codecs\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
@@ -186,7 +186,7 @@
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>copy "C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\oslibs\windows\codecs\x64\*.dll" "$(TargetDir)"</Command>
+      <Command>copy "%(SolutionDir)..\..\..\oslibs\windows\codecs\x64\*.dll" "$(TargetDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -196,7 +196,7 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>.;..\h2shared;..\..\common;..\..\oslibs\windows\misc\include;..\..\oslibs\windows\dxsdk\include;..\..\oslibs\windows\codecs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(SolutionDir)..\;%(SolutionDir)..\..\h2shared;%(SolutionDir)..\..\..\common;%(SolutionDir)..\..\..\oslibs\windows\misc\include;%(SolutionDir)..\..\..\oslibs\windows\dxsdk\include;%(SolutionDir)..\..\..\oslibs\windows\codecs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;DX_DLSYM;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;USE_CODEC_MP3;USE_CODEC_VORBIS;USE_CODEC_WAVE;USE_CODEC_FLAC;USE_CODEC_OPUS;USE_CODEC_MIKMOD;USE_CODEC_UMX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -208,11 +208,11 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;..\h2shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(SolutionDir)..\;%(SolutionDir)..\..\..\h2shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>libvorbisfile.lib;libvorbis.lib;libopusfile.lib;libopus.lib;libFLAC.lib;libogg.lib;libmad.lib;libmikmod.lib;wsock32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\..\oslibs\windows\codecs\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%(SolutionDir)..\..\..\oslibs\windows\codecs\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -222,7 +222,7 @@
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>copy "..\..\oslibs\windows\codecs\x86\*.dll" "$(TargetDir)"</Command>
+      <Command>copy "%(SolutionDir)..\..\..\oslibs\windows\codecs\x86\*.dll" "$(TargetDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -423,7 +423,7 @@
     <None Include="..\resource\hexen2.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="C:\Users\Ad4m\Downloads\gauntlet-of-thyrion\engine\h2shared\win32res.rc" />
+    <ResourceCompile Include="win32res.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

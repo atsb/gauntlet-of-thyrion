@@ -5,7 +5,7 @@
  * Originally from Hexen II source (C) Raven Software Corp.
  * based on an old DirectX5 sample code.
  * Few bits from Doom Legacy: Copyright (C) 1998-2000 by DooM Legacy Team.
- * Multiple fixes and cleanups and adaptation into new Hammer of Thyrion
+ * Multiple fixes and cleanups and adaptation into new Gauntlet of Thyrion
  * (uHexen2) code by O.Sezer:
  * Copyright (C) 2006-2012 O.Sezer <sezero@users.sourceforge.net>
  *

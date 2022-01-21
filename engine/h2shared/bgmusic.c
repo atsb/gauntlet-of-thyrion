@@ -1,5 +1,5 @@
 /*
- * Background music handling for Hexen II: Hammer of Thyrion (uHexen2)
+ * Background music handling for Hexen II: Gauntlet of Thyrion (uHexen2)
  * Handles streaming music as raw sound samples and runs the midi driver
  *
  * Copyright (C) 1999-2005 Id Software, Inc.

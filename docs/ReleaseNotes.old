@@ -1,4 +1,4 @@
-Hammer of Thyrion (uHexen2) release notes:
+Gauntlet of Thyrion (uHexen2) release notes:
 
 ========================================================================
 Changes in v1.4.3: (Apr. 04, 2008.)
@@ -99,7 +99,7 @@ ideas.
 
 - Added support for 64 bit architectures: crashes on amd64 are fixed.
 
-- Added support for protocol 18: Hammer of Thyrion is now fully network-
+- Added support for protocol 18: Gauntlet of Thyrion is now fully network-
   compatible with Raven's 1.11 windows version, as it has been with
   other Hexen II ports.
 
@@ -1019,7 +1019,7 @@ Changes in v1.2.2: (Dec. 19, 2004.)
 Changes in v1.2.1: (Nov. 26, 2004.)
 ========================================================================
 
-First release of Hammer of Thyrion based on Anvil of Thyrion v1.2.0.
+First release of Gauntlet of Thyrion based on Anvil of Thyrion v1.2.0.
 Changes from AoT-1.2.0:
 
 - The "No Boss" bug is fixed.

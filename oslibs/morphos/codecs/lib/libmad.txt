@@ -1,4 +1,4 @@
-# libmad-0.15.1b compiled for morphos port of Hammer of Thyrion (uhexen2):
+# libmad-0.15.1b compiled for morphos port of Gauntlet of Thyrion (uhexen2):
 # commented out unneeded code (see diffs below), and configured with
 # --host=ppc-morphos --disable-debugging
 # added -noixemul to the CFLAGS, compiled using gcc-4.4.5.

@@ -3547,7 +3547,7 @@ static void M_Quit_Draw (void)
 // the increment to the x offset is for properly centering the line
 	M_Print      (16 + (8 * 8), y,		"Hexen II version " STRINGIFY(ENGINE_VERSION));
 	M_Print      (16 + (9 * 8), y + 8,	"by Raven Software");
-	M_PrintWhite (16 + (7 * 8), y + 16,	"Hammer of Thyrion " HOT_VERSION_STR);
+	M_PrintWhite (16 + (7 * 8), y + 16,	"Gauntlet of Thyrion " HOT_VERSION_STR);
 	M_PrintWhite (16 +(13 * 8), y + 24,	"Source Port");
 	y += 40;
 

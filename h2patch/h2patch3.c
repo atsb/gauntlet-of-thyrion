@@ -569,7 +569,7 @@ static long get_millisecs (void)
 
 static void print_version (void)
 {
-	fprintf (stdout, "Hexen II 1.11 pak patch / Hammer of Thyrion (uHexen2) %d.%d.%d\n",
+	fprintf (stdout, "Hexen II 1.11 pak patch / Gauntlet of Thyrion (uHexen2) %d.%d.%d\n",
 			 HOT_VERSION_MAJ, HOT_VERSION_MID, HOT_VERSION_MIN);
 	fprintf (stdout, "Xdelta v3.0.0 backend (C) 2007-2011 by Joshua MacDonald\n");
 }

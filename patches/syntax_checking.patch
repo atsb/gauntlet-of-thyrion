@@ -1,4 +1,4 @@
-This is a hack to unix-ify the Hammer of Thyrion (uHexen2) command line.
+This is a hack to unix-ify the Gauntlet of Thyrion (uHexen2) command line.
 Its purpose is to catch mis-spelt options such as "-fullscrren" and also
 to print a comprehensive help message when desired.  It has two parts:
 

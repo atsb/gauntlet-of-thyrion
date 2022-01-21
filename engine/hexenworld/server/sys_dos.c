@@ -897,7 +897,7 @@ static int Sys_GetBasedir (char *argv0, char *dst, size_t dstsize)
 static void PrintVersion (void)
 {
 	printf ("HexenWorld server %4.2f (%s)\n", ENGINE_VERSION, PLATFORM_STRING);
-	printf ("Hammer of Thyrion, release %s (%s)\n", HOT_VERSION_STR, HOT_VERSION_REL_DATE);
+	printf ("Gauntlet of Thyrion, release %s (%s)\n", HOT_VERSION_STR, HOT_VERSION_REL_DATE);
 }
 
 /*

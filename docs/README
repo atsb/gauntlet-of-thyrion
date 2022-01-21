@@ -1,5 +1,5 @@
 
-Hexen II: Hammer of Thyrion (uHexen2) - v1.5.10
+Hexen II: Gauntlet of Thyrion (uHexen2) - v1.5.10
 -----------------------------------------------
 
 
@@ -41,7 +41,7 @@ Hexen II: Hammer of Thyrion (uHexen2) - v1.5.10
 1.1 Getting Started
 -------------------
 
-Hexen II source and the Hammer of Thyrion source port are free, but the
+Hexen II source and the Gauntlet of Thyrion source port are free, but the
 game itself is not: You must have an original copy of the game released
 by Raven Software and Activision.  If you don't, then download the demo
 version.
@@ -326,7 +326,7 @@ in this order. Full absolute path of timidity.cfg can be specified by
 setting the TIMIDITY_CFG environment variable as an override too, e.g.:
   export TIMIDITY_CFG=/usr/local/share/timidity/timidity.cfg
 
-Hammer of Thyrion supports OGG, MP3 and WAV external music files to be
+Gauntlet of Thyrion supports OGG, MP3 and WAV external music files to be
 played instead of the original midi files, so you can enjoy the hexen2
 music in good quality like they are from the hexen2 cdrom audio tracks.
 Ogg playback requires libogg and libvorbis, mp3 playback requires libmad
@@ -337,7 +337,7 @@ See README.music for more information.
 1.5 Networking / Multiplayer
 ----------------------------
 
-Since version 1.4.2 (engine version 1.19), Hammer of Thyrion binaries
+Since version 1.4.2 (engine version 1.19), Gauntlet of Thyrion binaries
 are fully compatible Raven's Windows Hexen II-1.11 binaries.  When run
 as a client, it can connect to Raven-1.11 servers and play just fine.
 It can playback the demos created with 1.11 version, as well.
@@ -379,7 +379,7 @@ you want.
 1.8 Joystick (gamepad) support
 ------------------------------
 
-Hammer of Thyrion supports joysticks (gamepads) through SDL. The feature
+Gauntlet of Thyrion supports joysticks (gamepads) through SDL. The feature
 can be enabled or disabled on the fly by setting joystick to 1 or 0 from
 the console.  It is disabled by default.  On the other hand, the -nojoy
 command line switch disables all joystick probing and usage.
@@ -698,14 +698,14 @@ list of them.
 3.5 Links
 ---------
 
-3.5.1  Hammer of Thyrion pages:
+3.5.1  Gauntlet of Thyrion pages:
 -------------------------------
 
-Home page	: http://uhexen2.sourceforge.net/
+Home page	: https://github.com/atsb/gauntlet-of-thyrion/
 Project page	: https://sourceforge.net/projects/uhexen2/
 Git Repository	: https://sourceforge.net/p/uhexen2/uhexen2/
 
-3.5.2  Hammer of Thyrion ports:
+3.5.2  Gauntlet of Thyrion ports:
 -------------------------------
 
 AmigaOS4 port:
@@ -720,7 +720,7 @@ RISC OS port:
 http://www.riscository.com/2012/hexen-ii-port-released/
 http://www.iconbar.com/forums/viewthread.php?threadid=8455&page=1#120298
 
-3.5.3  Hammer of Thyrion packages / builds:
+3.5.3  Gauntlet of Thyrion packages / builds:
 -------------------------------------------
 
 FreeBSD packages:
@@ -752,7 +752,7 @@ Hexen II Mac port : http://macglquake.sourceforge.net/
 Hexen II Dreamcast: http://dcquake.sourceforge.net/
 JSHexen II	  : http://jurajstyk.host.sk/
 Pa3PyX's Hexen II : http://pa3pyx.dnsalias.org/
-Kiero's old MorphOS port of Hammer of Thyrion:
+Kiero's old MorphOS port of Gauntlet of Thyrion:
 		    http://www.binaryriot.org/users/kiero/
 
 3.5.6  Other links:
@@ -791,7 +791,7 @@ Lookspring, lookstrafe and keyboard look (+klook) are legacy options
 from DOS times for systems without a mouse, which we didn't kill only
 for historical reasons. They are pretty much of no use today and we
 recommend disabling them if they aren't already. Those options and/or
-key bindings are removed from the menu system of Hammer of Thyrion.
+key bindings are removed from the menu system of Gauntlet of Thyrion.
 
 For reference, here are what they are meant to do, as written in the old
 manuals:
