@@ -2824,10 +2824,12 @@ static qboolean LineTxt2;
 static qboolean SoundPlayed;
 
 
-#define	MAX_LINES	145
+#define	MAX_LINES	147
 
 static const char *CreditText[MAX_LINES] =
 {
+   "Source Port Maintainer: Gibbon",
+   "",
    "Project Director: Brian Raffel",
    "",
    "Lead Programmer: Rick Johnson",
