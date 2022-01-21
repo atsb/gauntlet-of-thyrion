@@ -32,3 +32,8 @@ utils/VisualStudio2005/.vs/H2UTILS/FileContentIndex/read.lock
 engine/hexen2/VisualStudio2022/Build-glh2/x64/Release/RCa12556
 engine/hexen2/VisualStudio2022/Build-glh2/x64/Release/RCa08252
 engine/hexen2/VisualStudio2022/Build-glh2/x64/Release/RCa05884
+.DS_Store
+engine/.DS_Store
+engine/hexen2/.DS_Store
+gamecode/.DS_Store
+gamecode/hc/.DS_Store
