@@ -32,3 +32,8 @@ engine/.DS_Store
 engine/hexen2/.DS_Store
 gamecode/.DS_Store
 gamecode/hc/.DS_Store
+*.o
+engine/h2shared/sdl_inc.h
+engine/h2shared/SDLMain.m
+engine/hexen2/hexen2
+oslibs/macosx/codecs/lib/hexen2

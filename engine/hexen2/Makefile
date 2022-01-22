@@ -13,7 +13,7 @@
 #
 # To cross-compile for MacOSX on Unix: either pass the OSXBUILD=1
 # argument to make, or export it.  You would also need to pass a
-# suitable MACH_TYPE=xxx (ppc, x86, x86_64, or ppc64) argument to
+# suitable MACH_TYPE=xxx (x86_64, or arm64) argument to
 # make. Also see build_cross_osx.sh.
 #
 # To (cross-)compile for DOS: either pass the DOSBUILD=1 argument
@@ -54,11 +54,11 @@ SDL_LIBS   = $(shell $(SDL_CONFIG) --libs 2> /dev/null)
 
 # use fast x86 assembly on ia32 machines? (auto-disabled for
 # any other cpu.)
-USE_X86_ASM=yes
+USE_X86_ASM=no
 
 # use optimized m68k assembly for amiga
 # requires vasm from http://sun.hasenbraten.de/vasm/
-USE_M68K_ASM=yes
+USE_M68K_ASM=no
 
 # link to the opengl libraries at compile time? (defaults
 # to no, so the binaries will dynamically load the necessary
@@ -281,31 +281,18 @@ NASMFLAGS=-f macho
 CPUFLAGS=
 # @rpath can be used when targeting 10.5+
 USE_RPATH=no
-ifeq ($(MACH_TYPE),x86)
-# x86 requires 10.4.
-CFLAGS  +=-mmacosx-version-min=10.4
-LDFLAGS +=-mmacosx-version-min=10.4
-endif
-ifeq ($(MACH_TYPE),ppc)
-# require 10.2 for ppc builds (midi_osx.c requirement.)
-CFLAGS  +=-mmacosx-version-min=10.2
-LDFLAGS +=-mmacosx-version-min=10.2
-endif
-ifeq ($(MACH_TYPE),ppc64)
-# require 10.5 for ppc64 (actually SDL doesn't support ppc64.)
-CFLAGS  +=-mmacosx-version-min=10.5
-LDFLAGS +=-mmacosx-version-min=10.5
+ifeq ($(MACH_TYPE),x86_64)
+CFLAGS  +=-mmacosx-version-min=11.5
+LDFLAGS +=-mmacosx-version-min=11.5
 USE_RPATH=yes
 endif
-ifeq ($(MACH_TYPE),x86_64)
-# require 10.6 for amd64 builds (not 10.5: SDL's requirement.)
-# bundle1.o is needed for dyld_stub_binding_helper
-CFLAGS  +=-mmacosx-version-min=10.6
-LDFLAGS +=-mmacosx-version-min=10.6 -Wl,-lbundle1.o
+ifeq ($(MACH_TYPE),arm64)
+CFLAGS  +=-mmacosx-version-min=11.5
+LDFLAGS +=-mmacosx-version-min=11.5 -Wl
 USE_RPATH=yes
 endif
 ifeq ($(USE_RPATH),yes)
-LDFLAGS +=-Wl,-rpath,@executable_path/../Frameworks
+LDFLAGS +=
 endif
 
 ifeq ($(USE_SOUND),yes)
@@ -350,7 +337,7 @@ ifneq ($(SDL_FRAMEWORK_PATH),)
 SDL_LIBS  +=-F$(SDL_FRAMEWORK_PATH)
 SDL_CFLAGS+=-F$(SDL_FRAMEWORK_PATH)
 endif
-SDL_LIBS  +=-Wl,-framework,SDL -Wl,-framework,Cocoa
+SDL_LIBS  +=-Wl,-lSDL -Wl,-framework,Cocoa
 CFLAGS  += $(SDL_CFLAGS)
 LDFLAGS += $(SDL_LIBS)
 
@@ -409,12 +396,7 @@ ifeq ($(HOST_OS),sunos)
 SYSLIBS += -lsocket -lnsl -lresolv
 endif
 SYSLIBS += -lm
-
-ifneq ($(X11BASE),)
-GL_LINK=-L$(X11BASE)/lib -lGL
-else
 GL_LINK=-lGL
-endif
 
 ifeq ($(USE_SOUND),yes)
 ifneq ($(HOST_OS),linux)
