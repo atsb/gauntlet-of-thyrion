@@ -56,8 +56,8 @@ License:	GPLv2
 Group:		Amusements/Games
 Version:	1.5.10
 Release:	1
-Summary:	Hexen II: Hammer of Thyrion
-URL:		http://uhexen2.sourceforge.net/
+Summary:	Hexen II: Gauntlet of Thyrion
+URL:		https://github.com/atsb/gauntlet-of-thyrion/
 Source:		http://download.sourceforge.net/uhexen2/hexen2source-%{version}.tgz
 #Source1:	http://download.sourceforge.net/uhexen2/gamedata-src-%{gamecode_ver}.tgz
 Source1:	http://download.sourceforge.net/uhexen2/hexen2source-gamecode-%{version}.tgz
@@ -83,7 +83,7 @@ Requires:	SDL >= 1.2.4
 
 %description
 Hexen II is a class based shooter game by Raven Software from 1997.
-Hammer of Thyrion is a port of the GPL'ed Hexen II source code.
+Gauntlet of Thyrion is a port of the GPL'ed Hexen II source code.
 This package contains binaries that will run both the original game
 and the Portal of Praevus mission pack, and a dedicated server.
 
@@ -96,7 +96,7 @@ Requires:	%{name} >= %{version}
 %description -n hexenworld
 Hexen II is a class based shooter game by Raven Software from 1997.
 HexenWorld is an extension of Hexen II with internet play enhancements.
-Hammer of Thyrion is a port of the GPL'ed Hexen II source code.
+Gauntlet of Thyrion is a port of the GPL'ed Hexen II source code.
 This package contains the files which are required to run a HexenWorld
 server or client, and a master server application.
 

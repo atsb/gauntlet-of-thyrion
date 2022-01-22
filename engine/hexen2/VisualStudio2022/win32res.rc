@@ -1,7 +1,7 @@
 // win32res.rc -- Win32 resource file for Hexen II / HexenWorld
 
 #include <winresrc.h>
-#include "resource.h"
+#include "..\..\h2shared\resource.h"
 
 // Icon
 IDI_ICON2 ICON DISCARDABLE RES_ICONFILE

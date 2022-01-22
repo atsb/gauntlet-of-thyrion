@@ -1,6 +1,6 @@
 #!/bin/sh
 # Simple script that rips Hexen II cdrom audio tracks to a
-# format useable by Hammer of Thyrion (uHexen2). Needs cdparanoia and oggenc.
+# format useable by Gauntlet of Thyrion (uHexen2). Needs cdparanoia and oggenc.
 
 # This particular script is to be used with the "Hexen II Xplosiv" cdrom:
 # It has all the audio tracks in reversed order by comparison to the retail

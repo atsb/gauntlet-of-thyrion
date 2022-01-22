@@ -1,7 +1,7 @@
 /*
  * compiler.h
  * compiler specific definitions and settings
- * used in the uhexen2 (Hammer of Thyrion) tree.
+ * used in the uhexen2 (Gauntlet of Thyrion) tree.
  * - standalone header
  * - doesn't and must not include any other headers
  * - shouldn't depend on arch_def.h, q_stdinc.h, or

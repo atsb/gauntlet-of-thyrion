@@ -1,4 +1,4 @@
-Hexen II: Hammer of Thyrion
+Hexen II: Gauntlet of Thyrion
 Support for Standalone Free contents
 
 [STATUS:  BETA / Incomplete, 2012-09-11, HoT-1.5.7, Engine version 1.29 ]

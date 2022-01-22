@@ -1,6 +1,6 @@
 #!/bin/sh
 # Simple script that rips Hexen II Portal of Praevus cdrom audio tracks to a
-# format useable by Hammer of Thyrion (uHexen2). Needs cdparanoia and oggenc.
+# format useable by Gauntlet of Thyrion (uHexen2). Needs cdparanoia and oggenc.
 
 # This particular script is to be used with the Hexen II: Portal of Praevus
 # i.e. the mission pack cdrom.

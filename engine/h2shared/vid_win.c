@@ -2,7 +2,7 @@
  * vid_win.c -- Win32 video driver
  *
  * Adapted from Quake2 and from an initial work by MH with many
- * modifications to make it work in Hexen II: Hammer of Thyrion.
+ * modifications to make it work in Hexen II: Gauntlet of Thyrion.
  * Uses only DIB sections/GDI.
  *
  * - TODO: Add back more low resolutions.

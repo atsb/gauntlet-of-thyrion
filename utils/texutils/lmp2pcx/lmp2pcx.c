@@ -650,7 +650,7 @@ static void ConvertWAD (const char *filename, int idx)
 static void print_usage (void)
 {
 	printf ("LMP2PCX v1.02 by Forest \"LordHavoc\" Hale.\n");
-	printf ("Adapted to Hexen II for the Hammer of Thyrion project by O.Sezer\n");
+	printf ("Adapted to Hexen II for the Gauntlet of Thyrion project by O.Sezer\n");
 	printf ("Converts all lmp, mip, wal and wad files in current directory to\n");
 	printf ("pcx and tga files. New files are placed in \"%s\" directory\n", OUTPUT_DIR);
 	printf ("The palette will be loaded from palette.lmp file if found in the\n");

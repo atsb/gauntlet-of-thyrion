@@ -1,4 +1,4 @@
-libmad-0.15.1b compiled for m68k-amigaos port of Hammer of Thyrion (uhexen2):
+libmad-0.15.1b compiled for m68k-amigaos port of Gauntlet of Thyrion (uhexen2):
 commented out unneeded code (see diffs below), built with the options seen
 in the makefiles below.
 

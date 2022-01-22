@@ -1,5 +1,5 @@
 /*
- * h2config.h -- Compile time options for Hexen II: Hammer of Thyrion.
+ * h2config.h -- Compile time options for Hexen II: Gauntlet of Thyrion.
  *
  * Copyright (C) 2005-2012  O.Sezer <sezero@users.sourceforge.net>
  *

@@ -1024,9 +1024,9 @@ static int Sys_GetBasedir (char *argv0, char *dst, size_t dstsize)
 
 static void PrintVersion (void)
 {
-	printf ("Hammer of Thyrion, release %s (%s)\n", HOT_VERSION_STR, HOT_VERSION_REL_DATE);
+	printf ("Gauntlet of Thyrion, release %s (%s)\n", HOT_VERSION_STR, HOT_VERSION_REL_DATE);
 	printf ("running on %s engine %4.2f (%s)\n", ENGINE_NAME, ENGINE_VERSION, PLATFORM_STRING);
-	printf ("More info / sending bug reports:  http://uhexen2.sourceforge.net\n");
+	printf ("More info / sending bug reports:  https://github.com/atsb/gauntlet-of-thyrion\n");
 }
 
 /*
