@@ -11,5 +11,5 @@ To build, go into the 'engine/hexen2' directory and inside there will be a 'MacO
 
 First you will need the Hexen 2 data (buy it from the affiliate link over at MacSourcePorts) and do the following:
 
-1. Copy the data1, help, music and splash directories to /Users/<your user>/Library/Application Support/ Hexen2
+1. Copy the data1, help, music and splash directories to /Users/your user/Library/Application Support/ Hexen2
 2. Execute the app bundle (gl or software) and kick butt!
