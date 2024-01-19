@@ -37,7 +37,6 @@
 #include "snd_umx.h"
 #include "snd_wave.h"
 #include "snd_flac.h"
-#include "snd_mp3.h"
 #include "snd_vorbis.h"
 #include "snd_opus.h"
 
