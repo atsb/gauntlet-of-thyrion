@@ -31,7 +31,7 @@
 #include "snd_opus.h"
 
 #include <errno.h>
-#include <opus/opusfile.h>
+#include <opusfile.h>
 
 
 /* CALLBACK FUNCTIONS: */

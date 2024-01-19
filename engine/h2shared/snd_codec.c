@@ -88,9 +88,6 @@ void S_CodecInit (void)
 #ifdef USE_CODEC_FLAC
 	S_CodecRegister(&flac_codec);
 #endif
-#ifdef USE_CODEC_MP3
-	S_CodecRegister(&mp3_codec);
-#endif
 #ifdef USE_CODEC_VORBIS
 	S_CodecRegister(&vorbis_codec);
 #endif
