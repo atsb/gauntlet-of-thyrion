@@ -938,8 +938,6 @@ static void _Host_Frame (float time)
 	else
 		S_Update (vec3_origin, vec3_origin, vec3_origin, vec3_origin);
 
-	CDAudio_Update();
-
 	if (host_speeds.integer)
 	{
 		pass1 = (time1 - time3)*1000;
@@ -1043,7 +1041,6 @@ void Host_Init (void)
 		Sbar_Init();
 
 		S_Init ();
-		CDAudio_Init();
 		MIDI_Init();
 		BGM_Init();
 
@@ -1115,7 +1112,6 @@ void Host_Shutdown(void)
 	if (cls.state != ca_dedicated)
 	{
 		BGM_Shutdown();
-		CDAudio_Shutdown ();
 		MIDI_Cleanup();
 		S_Shutdown();
 		IN_Shutdown ();

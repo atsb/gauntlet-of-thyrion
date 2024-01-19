@@ -1409,13 +1409,11 @@ void CL_ParseServerMessage (void)
 			cl.paused = MSG_ReadByte ();
 			if (cl.paused)
 			{
-				CDAudio_Pause ();
 				BGM_Pause ();
 				VID_HandlePause (true);
 			}
 			else
 			{
-				CDAudio_Resume ();
 				BGM_Resume ();
 				VID_HandlePause (false);
 			}
@@ -1451,12 +1449,8 @@ void CL_ParseServerMessage (void)
 		case svc_cdtrack:
 			cl.cdtrack = MSG_ReadByte ();
 			cl.looptrack = MSG_ReadByte ();
-			if (q_strcasecmp(bgmtype.string,"cd") != 0)
-				CDAudio_Stop ();
-			else if ((cls.demoplayback || cls.demorecording) &&
+			if ((cls.demoplayback || cls.demorecording) &&
 						cls.forcetrack != -1)
-				CDAudio_Play ((byte)cls.forcetrack, true);
-			else	CDAudio_Play ((byte)cl.cdtrack, true);
 			break;
 
 		case svc_midi_name:

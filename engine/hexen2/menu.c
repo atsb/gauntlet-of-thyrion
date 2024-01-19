@@ -3539,7 +3539,6 @@ static void M_Quit_Draw (void)
 			{
 				MaxLines = MAX_LINES2_MP;
 				LineText = Credit2TextMP;
-				CDAudio_Play (12, false);
 			}
 			else
 			{
@@ -5290,17 +5289,10 @@ static void BGM_RestartMusic (void)
 
 	if (q_strcasecmp(bgmtype.string,"midi") == 0)
 	{
-		CDAudio_Stop();
 		BGM_PlayMIDIorMusic(cl.midi_name);
-	}
-	else if (q_strcasecmp(bgmtype.string,"cd") == 0)
-	{
-		BGM_Stop();
-		CDAudio_Play ((byte)cl.cdtrack, true);
 	}
 	else
 	{
-		CDAudio_Stop();
 		BGM_Stop();
 	}
 }

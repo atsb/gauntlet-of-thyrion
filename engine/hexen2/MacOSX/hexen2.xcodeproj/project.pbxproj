@@ -55,7 +55,6 @@
 		70158C170AAF3C8800F6437C /* r_surf.c in Sources */ = {isa = PBXBuildFile; fileRef = 70158B900AAF3B3600F6437C /* r_surf.c */; };
 		70158C180AAF3C8800F6437C /* r_vars.c in Sources */ = {isa = PBXBuildFile; fileRef = 70158B910AAF3B3600F6437C /* r_vars.c */; };
 		70158C190AAF3C8800F6437C /* screen.c in Sources */ = {isa = PBXBuildFile; fileRef = 70158B930AAF3B3600F6437C /* screen.c */; };
-		70158C1A0AAF3C8800F6437C /* cd_sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = 707D577C0AA9F6EE00313A9F /* cd_sdl.c */; };
 		70158C1B0AAF3C8800F6437C /* chase.c in Sources */ = {isa = PBXBuildFile; fileRef = 707D577F0AA9F6EE00313A9F /* chase.c */; };
 		70158C1C0AAF3C8800F6437C /* cl_cmd.c in Sources */ = {isa = PBXBuildFile; fileRef = 707D57800AA9F6EE00313A9F /* cl_cmd.c */; };
 		70158C1D0AAF3C8800F6437C /* cl_demo.c in Sources */ = {isa = PBXBuildFile; fileRef = 707D57810AA9F6EE00313A9F /* cl_demo.c */; };
@@ -234,9 +233,6 @@
 		707D57790AA9F6EE00313A9F /* anorm_dots.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = anorm_dots.h; path = ../../h2shared/anorm_dots.h; sourceTree = SOURCE_ROOT; };
 		707D577A0AA9F6EE00313A9F /* anorms.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = anorms.h; path = ../../../common/anorms.h; sourceTree = SOURCE_ROOT; };
 		707D577B0AA9F6EE00313A9F /* bspfile.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = bspfile.h; path = ../bspfile.h; sourceTree = SOURCE_ROOT; };
-		707D577C0AA9F6EE00313A9F /* cd_sdl.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = cd_sdl.c; path = ../../h2shared/cd_sdl.c; sourceTree = SOURCE_ROOT; };
-		707D577D0AA9F6EE00313A9F /* cd_unix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = cd_unix.h; path = ../../h2shared/cd_unix.h; sourceTree = SOURCE_ROOT; };
-		707D577E0AA9F6EE00313A9F /* cdaudio.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = cdaudio.h; path = ../../h2shared/cdaudio.h; sourceTree = SOURCE_ROOT; };
 		707D577F0AA9F6EE00313A9F /* chase.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = chase.c; path = ../chase.c; sourceTree = SOURCE_ROOT; };
 		707D57800AA9F6EE00313A9F /* cl_cmd.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = cl_cmd.c; path = ../cl_cmd.c; sourceTree = SOURCE_ROOT; };
 		707D57810AA9F6EE00313A9F /* cl_demo.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = cl_demo.c; path = ../cl_demo.c; sourceTree = SOURCE_ROOT; };
@@ -453,9 +449,6 @@
 				707D577A0AA9F6EE00313A9F /* anorms.h */,
 				707D577B0AA9F6EE00313A9F /* bspfile.h */,
 				707D57930AA9F6EE00313A9F /* bgmusic.c */,
-				707D577C0AA9F6EE00313A9F /* cd_sdl.c */,
-				707D577D0AA9F6EE00313A9F /* cd_unix.h */,
-				707D577E0AA9F6EE00313A9F /* cdaudio.h */,
 				707D577F0AA9F6EE00313A9F /* chase.c */,
 				707D57800AA9F6EE00313A9F /* cl_cmd.c */,
 				707D57810AA9F6EE00313A9F /* cl_demo.c */,
@@ -686,7 +679,6 @@
 				70158C180AAF3C8800F6437C /* r_vars.c in Sources */,
 				70158C190AAF3C8800F6437C /* screen.c in Sources */,
 				70158C280AAF3C8800F6437C /* bgmusic.c in Sources */,
-				70158C1A0AAF3C8800F6437C /* cd_sdl.c in Sources */,
 				70158C1B0AAF3C8800F6437C /* chase.c in Sources */,
 				70158C1C0AAF3C8800F6437C /* cl_cmd.c in Sources */,
 				70158C1D0AAF3C8800F6437C /* cl_demo.c in Sources */,

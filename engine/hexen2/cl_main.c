@@ -126,7 +126,6 @@ void CL_Disconnect (void)
 // stop sounds (especially looping!)
 	S_StopAllSounds (true);
 	BGM_Stop();
-	CDAudio_Stop();
 	loading_stage = 0;
 
 // bring the console down and fade the colors back to normal

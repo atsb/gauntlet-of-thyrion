@@ -453,8 +453,6 @@ void BGM_PlayCDtrack (byte track, qboolean looping)
 	music_handler_t *handler;
 
 	BGM_Stop();
-	if (CDAudio_Play(track, looping) == 0)
-		return;			/* success */
 
 	if (music_handlers == NULL)
 		return;
