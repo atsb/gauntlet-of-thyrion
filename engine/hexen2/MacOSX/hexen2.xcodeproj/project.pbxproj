@@ -11,8 +11,8 @@
 		3C19D5492B5A7C06002A3BC0 /* SDL2.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3C19D5482B5A7C06002A3BC0 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3C524E7D2B5AB17100571719 /* Vorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C524E7C2B5AB17100571719 /* Vorbis.framework */; };
 		3C524E7F2B5AB18F00571719 /* Vorbis.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3C524E7E2B5AB18F00571719 /* Vorbis.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3C524E812B5AB23E00571719 /* Opus.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3C524E802B5AB23E00571719 /* Opus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3C524E832B5AB24800571719 /* Opus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C524E822B5AB24800571719 /* Opus.framework */; };
+		3C524E852B5ABDE300571719 /* OpusOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C524E842B5ABDE300571719 /* OpusOSX.framework */; };
+		3C524E872B5ABDF400571719 /* OpusOSX.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3C524E862B5ABDF400571719 /* OpusOSX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3C642D072B5A897700EDC8E0 /* libmikmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C19D5442B5A7BBF002A3BC0 /* libmikmod.a */; };
 		3C642D0D2B5A897700EDC8E0 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C19D5462B5A7BCE002A3BC0 /* SDL2.framework */; };
 		48281308179C4055004E1D61 /* snd_flac.c in Sources */ = {isa = PBXBuildFile; fileRef = 48281305179C4055004E1D61 /* snd_flac.c */; };
@@ -153,7 +153,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3C524E812B5AB23E00571719 /* Opus.framework in Copy Frameworks */,
+				3C524E872B5ABDF400571719 /* OpusOSX.framework in Copy Frameworks */,
 				3C524E7F2B5AB18F00571719 /* Vorbis.framework in Copy Frameworks */,
 				3C19D5492B5A7C06002A3BC0 /* SDL2.framework in Copy Frameworks */,
 			);
@@ -170,8 +170,8 @@
 		3C19D5482B5A7C06002A3BC0 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = libs/SDL2.framework; sourceTree = "<group>"; };
 		3C524E7C2B5AB17100571719 /* Vorbis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vorbis.framework; path = libs/Vorbis.framework; sourceTree = "<group>"; };
 		3C524E7E2B5AB18F00571719 /* Vorbis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vorbis.framework; path = libs/Vorbis.framework; sourceTree = "<group>"; };
-		3C524E802B5AB23E00571719 /* Opus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Opus.framework; path = libs/Opus.framework; sourceTree = "<group>"; };
-		3C524E822B5AB24800571719 /* Opus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Opus.framework; path = libs/Opus.framework; sourceTree = "<group>"; };
+		3C524E842B5ABDE300571719 /* OpusOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpusOSX.framework; path = libs/OpusOSX.framework; sourceTree = "<group>"; };
+		3C524E862B5ABDF400571719 /* OpusOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpusOSX.framework; path = libs/OpusOSX.framework; sourceTree = "<group>"; };
 		4818B0B012D5BA1A006DD66E /* snd_umx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = snd_umx.c; path = ../../h2shared/snd_umx.c; sourceTree = "<group>"; };
 		48281305179C4055004E1D61 /* snd_flac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = snd_flac.c; path = ../../h2shared/snd_flac.c; sourceTree = "<group>"; };
 		48281306179C4055004E1D61 /* snd_flac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = snd_flac.h; path = ../../h2shared/snd_flac.h; sourceTree = "<group>"; };
@@ -363,9 +363,9 @@
 				70158C890AAF421B00F6437C /* AudioUnit.framework in Frameworks */,
 				70158C8A0AAF421B00F6437C /* CoreServices.framework in Frameworks */,
 				70158C8B0AAF421B00F6437C /* Cocoa.framework in Frameworks */,
-				3C524E832B5AB24800571719 /* Opus.framework in Frameworks */,
 				70158C8C0AAF421B00F6437C /* IOKit.framework in Frameworks */,
 				70158C8D0AAF421B00F6437C /* OpenGL.framework in Frameworks */,
+				3C524E852B5ABDE300571719 /* OpusOSX.framework in Frameworks */,
 				3C524E7D2B5AB17100571719 /* Vorbis.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,7 +376,7 @@
 		2AF0691029E98FEE005C5FD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3C524E822B5AB24800571719 /* Opus.framework */,
+				3C524E842B5ABDE300571719 /* OpusOSX.framework */,
 				3C524E7C2B5AB17100571719 /* Vorbis.framework */,
 				3C19D5462B5A7BCE002A3BC0 /* SDL2.framework */,
 			);
@@ -386,7 +386,7 @@
 		707D57580AA9F4B100313A9F = {
 			isa = PBXGroup;
 			children = (
-				3C524E802B5AB23E00571719 /* Opus.framework */,
+				3C524E862B5ABDF400571719 /* OpusOSX.framework */,
 				3C524E7E2B5AB18F00571719 /* Vorbis.framework */,
 				3C19D5482B5A7C06002A3BC0 /* SDL2.framework */,
 				2AF0690E29E98F9A005C5FD7 /* Hexen_II.entitlements */,
@@ -828,7 +828,7 @@
 					../../h2shared,
 					/opt/local/include,
 					../../../common,
-					"$(PROJECT_DIR)/libs/Opus.Framework/Headers",
+					"$(PROJECT_DIR)/libs/OpusOSX.Framework/Headers",
 					"$(PROJECT_DIR)/libs/Vorbis.Framework/Headers",
 					"$(PROJECT_DIR)/libs/SDL2.Framework/Headers",
 					"$(PROJECT_DIR)/include",
@@ -900,7 +900,7 @@
 					../../h2shared,
 					/opt/local/include,
 					../../../common,
-					"$(PROJECT_DIR)/libs/Opus.Framework/Headers",
+					"$(PROJECT_DIR)/libs/OpusOSX.Framework/Headers",
 					"$(PROJECT_DIR)/libs/Vorbis.Framework/Headers",
 					"$(PROJECT_DIR)/libs/SDL2.Framework/Headers",
 					"$(PROJECT_DIR)/include",

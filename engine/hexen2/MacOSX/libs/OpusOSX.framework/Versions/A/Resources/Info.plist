@@ -7,13 +7,13 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
-	<string>Opus</string>
+	<string>OpusOSX</string>
 	<key>CFBundleIdentifier</key>
-	<string>de.delete.Opus</string>
+	<string>de.delete.OpusOSX</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>Opus</string>
+	<string>OpusOSX</string>
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
