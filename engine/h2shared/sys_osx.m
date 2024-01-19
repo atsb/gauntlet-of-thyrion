@@ -83,7 +83,12 @@ void Cocoa_ErrorMessage (const char *errorMsg)
 #else
     NSString* msg = [NSString stringWithCString:errorMsg encoding:NSASCIIStringEncoding];
 #endif
-    NSRunCriticalAlertPanel (@"Hexen II Error", msg, @"OK", nil, nil);
+    NSAlert *alert = [[NSAlert alloc] init];
+    [alert setAlertStyle:NSAlertStyleCritical];
+    [alert setMessageText:@"Hexen II Error"];
+    [alert setInformativeText:msg];
+    [alert addButtonWithTitle:@"OK"];
+    [alert runModal];
 }
 
 
@@ -94,17 +99,13 @@ char *Sys_GetClipboardData (void)
     NSPasteboard* pasteboard	= [NSPasteboard generalPasteboard];
     NSArray* types		= [pasteboard types];
 
-    if ([types containsObject: NSStringPboardType]) {
-	NSString* clipboardString = [pasteboard stringForType: NSStringPboardType];
+    if ([types containsObject: NSPasteboardTypeString]) {
+        NSString* clipboardString = [pasteboard stringForType: NSPasteboardTypeString];
 	if (clipboardString != NULL && [clipboardString length] > 0) {
 		size_t sz = [clipboardString length] + 1;
 		sz = q_min(MAX_CLIPBOARDTXT, sz);
-		data = (char *) Z_Malloc(sz, Z_MAINZONE);
-#if (MAC_OS_X_VERSION_MIN_REQUIRED < 1040)	/* for ppc builds targeting 10.3 and older */
-		q_strlcpy (data, [clipboardString cString], sz);
-#else
+        char *data = (char *)Z_Malloc(sz, Z_MAINZONE);
 		q_strlcpy (data, [clipboardString cStringUsingEncoding: NSASCIIStringEncoding], sz);
-#endif
 	}
     }
     return data;

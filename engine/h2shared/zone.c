@@ -182,7 +182,7 @@ void Z_Free (void *ptr)
 }
 
 
-static void *Z_TagMalloc (zonelist_t *z, int size, int tag)
+static void *Z_TagMalloc (zonelist_t *z, size_t size, int tag)
 {
 	int		extra;
 	memblock_t	*start, *rover, *newblock, *base;
@@ -266,7 +266,7 @@ static void Z_CheckHeap (memzone_t *zone)
 Z_Malloc
 ========================
 */
-void *Z_Malloc (int size, int zone_id)
+void *Z_Malloc (size_t size, int zone_id)
 {
 	void	*buf;
 	zonelist_t*	z;

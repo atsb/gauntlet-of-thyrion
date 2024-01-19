@@ -99,7 +99,7 @@ void Memory_Init (void *buf, int size);
 extern "C" {
 #endif
 void Z_Free (void *ptr);
-void *Z_Malloc (int size, int zone_id);	/* returns 0 filled memory */
+void *Z_Malloc (size_t size, int zone_id);	/* returns 0 filled memory */
 void *Z_Realloc (void *ptr, int size, int zone_id);
 char *Z_Strdup (const char *s);
 #ifdef __cplusplus
